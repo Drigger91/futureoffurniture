@@ -215,18 +215,10 @@
          border-bottom: 5px orange solid;
      }
 
-        @media screen and (max-width:960px) {
+     @media screen and (max-width:960px) {
             .col {
                 flex: 100%;
                 max-width: 80%;
-            }
-            .navbar{
-                font-size: medium;
-            }
-            .logo{
-                font-size: small;
-                font-weight: bolder;
-                justify-content: justify;
             }
             .fas{
                 font-size: 0px;
@@ -235,6 +227,13 @@
                 width: 0px;
                 height: 0px;
             }
+            .logo{
+        justify-content: space-between;
+    }
+    .navbar{
+        font-size: medium;
+        font-weight: bolder;
+        }
         }
 
         @media screen and (max-width:600px) {
@@ -242,14 +241,6 @@
                 flex: 100%;
                 max-width: 100%;
             }
-            .navbar{
-                font-size: small;
-                font-weight: bolder;
-            }
-            .logo{
-                font-size: smaller;
-                justify-content: justify;
-            }
             .fas{
                 font-size: 0px;
             }
@@ -257,6 +248,13 @@
                 width: 0px;
                 height: 0px;
             }
+            .logo{
+        justify-content: space-around;
+    }
+    .navbar{
+        font-size: small;
+        font-weight: bolder;
+    }
         }
     </style>
 </head>
@@ -273,7 +271,7 @@
      </header>   
     <br>
     <nav class="navbar">
-        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/index.html" class="navbarlinks" id="home">Home</a>
         <a href="/Catalogue.html" class="navbarlinks">Our Catalogue</a>
         <a href="/testimonials.html" class="navbarlinks"> Testimonials</a>
         <a href="/ourteam.html" class="navbarlinks" id="team">Our Team</a>

@@ -32,7 +32,7 @@
             grid-template-rows: 280px 180px;
             border: 2px grey solid;
             border-radius: 25px;
-            overflow: hidden;
+            overflow: visible;
             justify-content: center;
             transition: 200ms;
             background-color:rgb(255, 243, 228);
@@ -286,12 +286,16 @@
             }
             .logo{
         justify-content: space-around;
-    }
+    
     .navbar{
         font-size: small;
         font-weight: bolder;
     }
         }
+        .card{
+            grid-template-columns: 100vw;
+        }
+     }
     
     </style>
 
@@ -308,7 +312,7 @@
      </header>   
     
     <nav class="navbar">
-        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/index.html" class="navbarlinks" id="home">Home</a>
         <a href="/Catalogue.html" class="navbarlinks" id="cata">Our Catalogue</a>
         <a href="/testimonials.html" class="navbarlinks"> Testimonials</a>
         <a href="/ourteam.html" class="navbarlinks">Our Team</a>
