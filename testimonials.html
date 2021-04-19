@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .level1 {
+            padding: 40px 0;
+            background-color: #f1f1f1;
+            color: #434343;
+            text-align: center;
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .sub1 {
+            width: 160px;
+            height: 5px;
+            background-color: #6ab04c;
+            margin: 26px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .fas{
+            padding: 15px;
+        }
+        .fas:hover{
+            color: coral;
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        .level2 {
+            background-color: #fff;
+            padding: 30px;
+
+        }
+
+        .level2 img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+
+        }
+
+        .star {
+            color: #6ab04c;
+            margin-bottom: 20px;
+        }
+        footer{
+         display: flex;
+         background-color: rgb(240, 235, 235);
+         font-size: x-large;
+         font-family: Arial, Helvetica, sans-serif;
+         align-items: center;
+         justify-content: space-around;
+         padding: 25px;
+     }
+        .details1{
+            font-size: medium;
+            color: black;
+        }
+        .navbarlinks{
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            transition: .05s;
+            display: inline-block;
+
+        }
+        .navbarlinks:hover{
+            color: rebeccapurple;
+            transform: scale(1.02);
+            border-bottom: orange 5px solid;
+            
+
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            margin: 5px;
+            justify-content: space-around;
+        }
+        .navbar{
+            display: flex;
+            padding: 10px;
+            font-size: xx-large;
+            font-weight: lighter;
+            color: black;
+            text-decoration: none;
+            justify-content: space-evenly;
+        }
+        .writtenlogo{
+         color: orange;
+         font-weight: bold;
+         font-family: fantasy;
+         font-size: 27.1px;
+         font-family: 'Work Sans', sans-serif;
+     }
+     .fas{
+            padding: 15px;
+        }
+        .fas:hover{
+            color: coral;
+        }
+     #search{
+         width: 500px;
+         height: 35px;
+     }
+     #testi{
+         border-bottom: 5px solid orange;
+     }
+
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+            .fas{
+                font-size: 0px;
+            }
+            #search{
+                width: 0px;
+                height: 0px;
+            }
+            .logo{
+        justify-content: space-between;
+    }
+    .navbar{
+        font-size: medium;
+        font-weight: bolder;
+    }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .fas{
+                font-size: 0px;
+            }
+            #search{
+                width: 0px;
+                height: 0px;
+            }
+            .logo{
+        justify-content: space-around;
+    }
+    .navbar{
+        font-size: small;
+        font-weight: bolder;
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="logo"> <h2 class="writtenlogo"> Future of Furniture</h2>
+        <input type="search" value="" type="hidden" class="search" id="search">
+        <span class="icons">
+        <a href="#"><i class="fas fa-heart"> <br>Wishlist </i></a>
+        <a href="#"><i class="fas fa-shopping-cart"> <br>Cart </i></a>
+        <a href=""><i class="fas fa-truck-moving"> <br> Track</i></a>
+        <a href="#"><i class="fas fa-user-alt"> <br>Profile </i></a>
+        </span>
+     </header>   
+    
+    <nav class="navbar">
+        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/Catalogue.html" class="navbarlinks">Our Catalogue</a>
+        <a href="/testimonials.html" class="navbarlinks" id="testi"> Testimonials</a>
+        <a href="/ourteam.html" class="navbarlinks">Our Team</a>
+        <a href="/contactus.html" class="navbarlinks" id="contact">Contact us</a>
+    </nav>
+<br> <br><hr>
+    <div class="level1">
+        <div class="inner">
+            <h1>Customer Reviews</h1>
+            <div class="sub1"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">Nayak</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Diwali is just around the corner! And this time I haven’t really made much of an effort to
+                            prep the home. All I will be doing is hang some string lights and light some scented candles
+                            which is equal to “zero effort”, also thanks to Future of Furniture for this lovely Bed
+                            which would
+                            be my main indoor decoration </p>
+                        
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">Khalnayak</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <p>Our Little Vihaan has found his perfect spot right in the middle of my lovely living room,
+                            Lewis and Robert are a golden touch to my home! Thanks to Future of Furniture for such a
+                            prompt
+                            delivery. </p>
+                            <br><br><br>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">Maha Khalnayak</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p> We were looking for a shelf where we could keep our books and other daily purpose utilities.
+                            The shelf from Future of Furniture solved many problems of arranging things at various
+                            places. Many beautiful things
+                            in life come in small packages Future of Furniture. Thanks . I am loving it. </p> <br>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">assasin</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Our room of pride, as seen from top, brought to life by Future of Furniture goodness...we've
+                            played around with all we liked - the Lyon side tables, the Winchester sofa, Morgen Wing
+                            chairs, Parker coffee table and TV unit...and we love what we've got! </p> <br><br>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">templar</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>The Hamilton Nested stools in teak, fit perfectly in the corner of my living room. The best
+                            part about these stools is their usability and practicality they have been designed with.
+                            One could separate them out for use when you have guests at home, and stack them back
+                            together when not in use. Love the grains of the sheesham wood used.Thanks Future of
+                            Furniture </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name"> lara croft</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>A perfect setup for guests with 'Presley Sofa set', that brought our living room to life!
+                            Thank you Future of Furniture for offering such a wide variety of quality products combined
+                            with
+                            beautiful designs that are simply irresistible. </p> <br><br><br>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">desmond miles</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Bought two replica chairs a few days ago, one with black 'leather' finish and the other with
+                            white 'leather'. I put the black one with my bedroom work table. I was pleasantly surprised
+                            to see how well the chair blends in with rest of the furniture with black and teakwood
+                            finish. </p> <br>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">tommy vercetti</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p> This is story about my dresser which keeps all my things my specs,my cosmetics, my car key,
+                            my medicines, My phone AL at one place. So much use of one product is just perfect and I am
+                            loving it. The drawers are easy to handle .Very smooth. Thank you Future of Furniture </p> <br>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/profilephtoto.jfif" alt="">
+                        <div class="name">Ezio</div>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>The Carson upholstered bench and the Takai side table takes our living room to the next level
+                            of functionality. We love the the hidden storage inside the bench and the funky colours of
+                            the side table. It's always astonishing to see the way Future of Furniture curates their furniture
+                            collection. Great designs </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

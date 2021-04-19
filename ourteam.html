@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/299e3b3379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .level1 {
+            padding: 40px 0;
+            background-color: #f1f1f1;
+            color: #434343;
+            text-align: center;
+            overflow: hidden;
+            /* position: relative; */
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+
+        }
+       
+
+        .sub1 {
+            width: 160px;
+            height: 5px;
+            background-color: blueviolet;
+            margin: 26px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .level2 {
+            background-color: #fff;
+            /* background: #fcf8e4; */
+            padding: 30px;
+            border: 1px solid paleturquoise;
+            border-radius: 15%;
+
+
+
+        }
+
+        .level3 {
+
+            background: #f1f1f1;
+            padding: 30px;
+
+
+
+        }
+
+        .level2 img {
+
+            /* width: 300px;
+            height: 300px; */
+            /* border-radius: 50%; */
+            /* cursor: pointer;
+            transition: 1s;  */
+            */
+        }
+
+        .col img {
+            width: 290px;
+            height: 290px;
+            cursor: pointer;
+            transition: .5s;
+
+        }
+
+        .col:hover img {
+            transform: scale(1.1);
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+
+        }
+
+
+
+        .social .fab {
+            width: 15%;
+            height: 35%;
+            line-height: 100%;
+            margin: 0 7px;
+            cursor: pointer;
+            transition: .5s;
+
+
+
+        }
+
+        .social .fab:hover {
+             background-color: white; 
+            color: blueviolet;
+            transform: translateY(-7px);
+        }
+        .About{
+            background-color: #fff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding: 10px 10px;
+            margin: 20px 20px;
+            margin-bottom: 100px;
+            border: 1px solid paleturquoise;
+            
+        }
+        .hula{
+            font-style: italic;
+            font-weight: bold;
+        }
+        .hola
+        {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer{
+         display: flex;
+         background-color: rgb(240, 235, 235);
+         font-size:larger;
+         font-family: Arial, Helvetica, sans-serif;
+         align-items: center;
+         justify-content: space-around;
+         padding: 25px;
+     }
+        .details1{
+            font-size: medium;
+            color: black;
+        }
+        .navbarlinks{
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            transition: .05s;
+            display: inline-block;
+
+        }
+        .navbarlinks:hover{
+            color: rebeccapurple;
+            transform: scale(1.02);
+            border-bottom: orange 5px solid;
+            
+
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            margin: 5px;
+            justify-content: space-around;
+        }
+        .navbar{
+            display: flex;
+            padding: 10px;
+            font-size: xx-large;
+            font-weight: lighter;
+            color: black;
+            text-decoration: none;
+            justify-content: space-evenly;
+        }
+        .writtenlogo{
+         color: orange;
+         font-weight: bold;
+         font-family: fantasy;
+         font-size: 27.1px;
+         font-family: 'Work Sans', sans-serif;
+     }
+     .fas{
+            padding: 15px;
+        }
+        .fas:hover{
+            color: coral;
+        }
+        #search{
+            width: 500px;
+            height: 35px;
+        }
+     #team{
+         border-bottom: 5px orange solid;
+     }
+
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+            .navbar{
+                font-size: medium;
+            }
+            .logo{
+                font-size: small;
+                font-weight: bolder;
+                justify-content: justify;
+            }
+            .fas{
+                font-size: 0px;
+            }
+            #search{
+                width: 0px;
+                height: 0px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .navbar{
+                font-size: small;
+                font-weight: bolder;
+            }
+            .logo{
+                font-size: smaller;
+                justify-content: justify;
+            }
+            .fas{
+                font-size: 0px;
+            }
+            #search{
+                width: 0px;
+                height: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="logo"> <h2 class="writtenlogo"> Future of Furniture</h2>
+        <input type="search" id="search" value="" type="hidden" class="search">
+        <span class="icons">
+        <a href="#"><i class="fas fa-heart"> <br>Wishlist </i></a>
+        <a href="#"><i class="fas fa-shopping-cart"> <br>Cart </i></a>
+        <a href=""><i class="fas fa-truck-moving"> <br> Track</i></a>
+        <a href="#"><i class="fas fa-user-alt"> <br>Profile </i></a>
+        </span>
+     </header>   
+    <br>
+    <nav class="navbar">
+        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/Catalogue.html" class="navbarlinks">Our Catalogue</a>
+        <a href="/testimonials.html" class="navbarlinks"> Testimonials</a>
+        <a href="/ourteam.html" class="navbarlinks" id="team">Our Team</a>
+        <a href="/contactus.html" class="navbarlinks" id="contact">Contact us</a>
+    </nav>
+    <br><br><hr>
+    <div class="level1">
+        <div class="About">
+            <h1>About us</h1>
+            <div class="sub1"></div><br>
+            <p class="hola"> <em class="hula"> Future of Furniture </em>is a one stop destination for all your furniture related requirements.
+                Whether you’re planning to move to a new location or simply looking to refurbish &
+                modernize your current one, we are here to offer you our assistance with affordable home
+                and workspace furniture solutions. Furniture units not only classify as utility products, but
+                also beautify every nook & corner of your home and office. <br> We here at Future of Furniture,
+                provide you with a diverse variety of furniture products that offer comfort & functionality
+                and blend into your space as if they just belong there. <br>
+                Future of Furniture is one of the top furniture stores in India that operates both as an online
+                and offline marketplace, and has furniture studios in numerous cities across the country.
+                With huge stylish products and reliable services, we bring a collection of comfortable,
+                modern and pocket-friendly furniture products, right to your doorstep.</p>
+        </div>
+        <div class="inner">
+            <h1>Our Team</h1>
+            <div class="sub1"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="level3">
+                        <!-- <img src="i1.jpg" alt=""> -->
+                        <!-- <div class="name">Full Name</div> -->
+                        <!-- <p>Graphic Designing  </p><br>
+                        <div class="social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/Shubhra.jpg" alt="">
+                        <div class="name">Shubhra silakari</div>
+
+                        <p> Owner </p><br>
+                        <div class="social">
+                            
+                            <a href="https://www.instagram.com/shubhra.7/" class="fab fa-instagram" style="text-decoration: none; color: black;"></a>
+                            <a  href =" https://www.linkedin.com/in/shubhra7s" class="fab fa-linkedin-in" style="text-decoration: none; color: black;" ></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level3">
+                        <!-- <img src="i3.jpg" alt=""> -->
+                        <!-- <div class="name">Full Name</div> -->
+
+                        <!-- <p> Media & Content  Marketing & Management</p><br> -->
+                        <!-- <div class="social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/Utkarsh.png" alt="">
+                        <div class="name">Utkarsh Dubey</div>
+                        <p> Media & Content <br> Marketing & Management</p><br>
+                        <div class="social">
+                            
+                            <a href="https://www.instagram.com/utkarshdubey333/" class="fab fa-instagram" style="text-decoration: none; color: black;"></a>
+                            
+                            <a href ="https://www.linkedin.com/mwlite/in/utkarsh-dubey-4145b320b" class="fab fa-linkedin-in" style="text-decoration: none; color: black;"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/ashutosh.jpg" alt="">
+                        <div class="name">Ashutosh Soni</div>
+                        <p>Graphic Designing </p><br>
+                        <div class="social">
+                            
+                            <a href="" class="fab fa-instagram" style="text-decoration: none; color: black;"></a>
+                            
+                            <a href="" class="fab fa-linkedin-in" style="text-decoration: none; color: black;"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/Shreya.jpg" alt="">
+                        <div class="name">Shreya Jain</div>
+                        <p>Graphic Designing </p><br>
+                        <div class="social">
+                            
+                            <a href = "https://www.instagram.com/_shreyaa_jain__/"
+                            class="fab fa-instagram" style="text-decoration: none; color: black;"></a>
+                           
+                            <a href="https://www.linkedin.com/in/shreya-jain-770a5220a" class="fab fa-linkedin-in" style="text-decoration: none; color: black;"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="i2.jpg" alt="">
+                        <div class="name">Harshit Gupta</div>
+
+                        <p>App Developer </p><br>
+                        <div class="social">
+                           
+                            <a class="fab fa-instagram"style="text-decoration: none; color: black;"></a>
+                            
+                            <a class="fab fa-linkedin-in" style="text-decoration: none; color: black;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/piyush.jpg" alt="">
+                        <div class="name">Piyush Tiwari</div>
+
+                        <p>Web Developer </p><br>
+                        <div class="social">
+                            
+                            <a href="https://www.instagram.com/piyush_t29/" class="fab fa-instagram"style="text-decoration: none ; color: black;"></a>
+                           
+                            <a href=" https://www.linkedin.com/in/piyush-tiwari-ab0178210" class="fab fa-linkedin-in" style="text-decoration: none ; color: black;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="level2">
+                        <img src="https://futureoffurniture.s3.ap-south-1.amazonaws.com/ourteam/jayesh.jpg" alt="">
+                        <div class="name">Jayesh Fulmali</div>
+
+                        <p>Web Developer </p><br>
+                        <div class="social">
+                            
+                            <a href="https://www.instagram.com/jayeshfulamli/" class="fab fa-instagram" style="text-decoration: none ; color: black;"></a>
+                            
+                            <a href="https://www.linkedin.com/in/jayesh-fulmali-796b0b20a" class="fab fa-linkedin-in"  style="text-decoration: none ; color: black;"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/299e3b3379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+
+        .container{
+        
+            display: grid;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            justify-content: justify;
+            font-size: larger;
+        
+        }
+        .h1{
+            text-decoration: underline;
+        }
+        .submit{
+            width: 150px;
+            text-transform:uppercase ;
+            border-radius: 5px;
+            height: 25px;
+            transition: .1s;
+            
+        }
+        .submit:hover{
+            background-color: rgba(49, 224, 49, 0.425);
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        footer{
+         display: flex;
+         background-color: rgb(240, 235, 235);
+         font-size: x-large;
+         font-family: Arial, Helvetica, sans-serif;
+         align-items: center;
+         justify-content: space-around;
+         padding: 25px;
+     }
+        .details1{
+            font-size: medium;
+            color: black;
+        }
+        .navbarlinks{
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            transition: .05s;
+            display: inline-block;
+
+        }
+        .navbarlinks:hover{
+            color: rebeccapurple;
+            transform: scale(1.02);
+            border-bottom: orange 5px solid;
+            
+
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            margin: 5px;
+            justify-content: space-around;
+        }
+        .navbar{
+            display: flex;
+            padding: 10px;
+            font-size: xx-large;
+            font-weight: lighter;
+            color: black;
+            text-decoration: none;
+            justify-content: space-evenly;
+        }
+        .writtenlogo{
+         color: orange;
+         font-weight: bold;
+         font-family: fantasy;
+         font-size: 27.1px;
+         font-family: 'Work Sans', sans-serif;
+     }
+     .fas{
+            padding: 15px;
+        }
+        .fas:hover{
+            color: coral;
+        }
+     #search{
+         width: 500px;
+         height: 35px;
+     }
+    #contact{
+        border-bottom: orange 5px solid;
+    }
+    @media screen and (max-width:800px)
+{
+    .fas{
+        font-size: 0px;
+
+    }
+    .logo{
+        justify-content: space-between;
+    }
+    .navbar{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    #search{
+        width: 0px;
+        height: 0px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    .fas{
+        font-size: 0px;
+
+    }
+    .logo{
+        justify-content: space-around;
+    }
+    .navbar{
+        font-size: small;
+        font-weight: bolder;
+    }
+    #search{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="logo"> <h2 class="writtenlogo"> Future of Furniture</h2>
+        <input type="search" value="" type="hidden" class="search" id="search">
+        <span class="icons">
+        <a href="#"><i class="fas fa-heart"> <br>Wishlist </i></a>
+        <a href="#"><i class="fas fa-shopping-cart"> <br>Cart </i></a>
+        <a href=""><i class="fas fa-truck-moving"> <br> Track</i></a>
+        <a href="#"><i class="fas fa-user-alt"> <br>Profile </i></a>
+        </span>
+     </header>   
+    
+    <nav class="navbar">
+        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/Catalogue.html" class="navbarlinks">Our Catalogue</a>
+        <a href="/testimonials.html" class="navbarlinks"> Testimonials</a>
+        <a href="/ourteam.html" class="navbarlinks">Our Team</a>
+        <a href="/contactus.html" class="navbarlinks" id="contact">Contact us</a>
+    </nav>
+<br><br><hr>
+
+<div class="container">
+    
+
+
+    <h1 class="h1">Contact Us:</h1> <br>
+    <h2>Have any queries , write to us and we'll surely get back to you! <br></h2> 
+    <h4>* feilds are required.</h4>
+    <fieldset>
+    <form action="">
+
+        <h2>Contact information</h2> <br>
+        <p> *First Name: <input type="text" name="name" required> </p>
+        <p> *Last Name: <input type="text" name="name" required> </p>
+        <p>*Email: <input type="email" name="email" required></p>
+        <p>*Contact number: <input type="number" required></p>
+        <p>*Date of purchase: <input type="date" required></p>
+        <p>*Query:</p> <textarea name="Query" id="complain" cols="50" rows="15" requires></textarea>
+        <p>*Product description: <input type="text" name="description" required></p>
+        <p>*Address: <input type="text" required> </p>
+        <p>Landmark: <input type="text" ></p>
+       <p> *Pincode: <input type="text" required>
+        <p>*Purchased from: <br><br><em>Shop <input type="radio" id="Shop" name="shop"> <em>Online Store <input type="radio" name="shop" id="Online"></em> </p>
+        
+        <p>If purchased offline specify with store: <input type="text"></p>
+        <input type="submit" value="submit" class="submit">
+        
+
+
+    </form>
+    </fieldset>
+    <br><br>
+    </div>
+    <br> <hr>
+    <footer>
+        <span> Liked us here, You'll like it even more!. </span> <br>
+
+   <div>  Get in touch with us: <br>
+
+        <p class="details1"><i class="fa fa-phone "></i>+91-9000900xxx</p>
+        <p class="deatils1"><i class="fa fa-envelope"></i>futureoffurniture.30@gmail.com</p> 
+        <p class="details1"><a href="https://www.instagram.com/futureoffurniture.official/" target="_blank" class="fa fa-instagram" style=" text-decoration:none; color: black;"><i>futureoffurniture.official</i></a></p> </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/299e3b3379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            row-gap: 75px;
+            padding: 25px;
+            column-gap: 100px;
+            background-color: #fff5f53b;
+            font-family: "Work sans";
+        }
+        .card{
+            display: grid;
+            grid-template-columns: 440px;
+            grid-template-rows: 280px 180px;
+            border: 2px grey solid;
+            border-radius: 25px;
+            overflow: hidden;
+            justify-content: center;
+            transition: 200ms;
+            background-color:rgb(255, 243, 228);
+            box-shadow: 5px 5px 15px #f37f7f3b;
+            
+            
+        }
+        .card:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+        .image1{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf1.jfif");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image2{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf11.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image3{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf12.jfif");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image4{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf13.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image5{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf14.jpg");
+            background-size: 440px 280px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image6{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf15.jfif");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image7{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf16.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image8{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf17.jfif");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image9{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf18.jfif");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image10{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf19.jpg");
+            background-size: 440px 280px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image11{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf2.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image12{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf21.jpg");
+            background-size: 440px 280px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image13{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf3.jpeg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image14{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf4.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image15{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf5.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image16{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf6.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image17{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf7.webp");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image18{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf8.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image19{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgf9.jpg");
+            background-size: 440px 280px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image20{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgflast.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .image21{
+            background: url("https://furniturehomedecor1.s3.ap-south-1.amazonaws.com/imgffinallast.jpg");
+            background-size: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 8px;
+        }
+        .text{
+            padding: 8px;
+            margin: 25px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        h1{
+            text-decoration: underline;
+            text-align: center;  
+            font-size: xx-large;          
+        }
+        .navbarlinks{
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            transition: .05s;
+            display: inline-block;
+
+        }
+        .navbarlinks:hover{
+            color: rebeccapurple;
+            transform: scale(1.02);
+            border-bottom: orange 5px solid;
+            
+
+        }
+        .logo{
+            display: flex;
+            justify-content:center;
+            margin: 5px;
+            justify-content: space-around;
+        }
+        .navbar{
+            display: flex;
+            padding: 10px;
+            font-size: xx-large;
+            font-weight: lighter;
+            color: black;
+            text-decoration: none;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+        }
+        .writtenlogo{
+         color: orange;
+         font-weight: bold;
+         font-family: fantasy;
+         font-size: 27.1px;
+         font-family: 'Work Sans', sans-serif;
+     }
+     #cata{
+         border-bottom: solid 5px orange;
+     }
+
+     .fas{
+            padding: 15px;
+        }
+        .fas:hover{
+            color: coral;
+        }
+        #search{
+            width: 500px;
+            height: 35px;
+        }
+
+     @media screen and (max-width:900px){
+         .navbar{
+             font-size: medium;
+         }
+         .logo{
+             font-size: small;
+             justify-content: center;
+         }
+         .fas{
+             font-size: 0px;
+         }
+         #search{
+             width: 0px;
+             height: 0px;
+         }
+     }
+     @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .fas{
+                font-size: 0px;
+            }
+            #search{
+                width: 0px;
+                height: 0px;
+            }
+            .logo{
+        justify-content: space-around;
+    }
+    .navbar{
+        font-size: small;
+        font-weight: bolder;
+    }
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header class="logo"> <h2 class="writtenlogo"> Future of Furniture</h2>
+        <input type="search" id="search" value="" type="hidden" class="search">
+        <span class="icons">
+        <a href="#"><i class="fas fa-heart"> <br>Wishlist </i></a>
+        <a href="#"><i class="fas fa-shopping-cart"> <br>Cart </i></a>
+        <a href=""><i class="fas fa-truck-moving"> <br> Track</i></a>
+        <a href="#"><i class="fas fa-user-alt"> <br>Profile </i></a>
+        </span>
+     </header>   
+    
+    <nav class="navbar">
+        <a href="/HOME.html" class="navbarlinks" id="home">Home</a>
+        <a href="/Catalogue.html" class="navbarlinks" id="cata">Our Catalogue</a>
+        <a href="/testimonials.html" class="navbarlinks"> Testimonials</a>
+        <a href="/ourteam.html" class="navbarlinks">Our Team</a>
+        <a href="/contactus.html" class="navbarlinks" id="contact">Contact us</a>
+    </nav> <br><br><hr>
+    <h1><em>Catalogue</em></h1>
+    <br><br>
+<div class="container">
+    <div class="card">
+        <div class="image1"></div>
+        <div class="text"><em>A light background matching with the light colour of sofaset with proper sunlight and breeze to give you and your family a soothing experience.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image2"></div>
+        <div class="text"><em>A slight contrasting look to give you a lavish experience with a slight woody furnishing.It is a beautiful combination of both simplicity and elegance.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image3"></div>
+        <div class="text"><em>A look that defines comfortablity yet simplicity. A combination of autotrophic interior to refresh the environment and lighten your mood.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image4"></div>
+        <div class="text"><em>A lavishing experience with the sexiest colour combination.Not pocket friendly but experience will be worth the hassle.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image5"></div>
+        <div class="text"><em>A Rich festive experience for those who doesn't need ocassions to celebrate.Spend your every evening with your loved ones with joy and love.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image6"></div>
+        <div class="text"><em>A soothing environment with a lot of open space. Specially designed for apartments.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image7"></div>
+        <div class="text"><em>An organic environment to calm your mood everytime. Less furniture to get an adequate amount of free space.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image8"></div>
+        <div class="text"><em>A contasting yet simple furnishing suitable for small families.Less furniture allowing adjustments and shifting with no problems. </em> </div>
+    </div>
+    <div class="card">
+        <div class="image9"></div>
+        <div class="text"><em>A very simple and open furnishing designed thinking of comfort as your first priority. Pocket friendly and very suitable for small living rooms.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image10"></div>
+        <div class="text"><em>An elegant style designed specially for your halls.Comforting yet very elegant and beautifull.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image11"></div>
+        <div class="text"><em>A simple and peacefull environment giving you the best experience for reading and meditating.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image12"></div>
+        <div class="text"><em>An elegant decor for having a perfect welcome for your guests. A lot open space for introducing extra tables and decorative stuff.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image13"></div>
+        <div class="text"><em>Open sunlight and breeze with a royal colour combination in your living room to enrich your living experience.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image14"></div>
+        <div class="text"><em>A black and white combination of flooring and furnishing designed for halls and living rooms. Very easy on your eyes and a very keen look to have one.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image15"></div>
+        <div class="text"><em>A simple furnishing combinaton for small living rooms.Not very contrasting keeping your look simple yet beautifull.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image16"></div>
+        <div class="text"><em>A royal and lavish interior designed for someone with rich taste of culture.Very soothing but a little heavy on pockets.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image17"></div>
+        <div class="text"><em>A furnishing designed with lot of wood element in it. Keeping you close to nature and making environment very easy and fresh.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image18"></div>
+        <div class="text"><em>An interior with modern taste and lot of classy wood carvings.Only for those who don't mind spending a little extra just for a classy environment.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image19"></div>
+        <div class="text"><em>An interior designed for big living rooms.Equipped with more space for sitting yet having a lot of open space keeping the environment comfortable and not compact.</em> </div>
+    </div>
+    <div class="card">
+        <div class="image20"></div>
+        <div class="text"><em>An contrasting and very rich and classy look making the environmentvery comfortable for guests and acquaintances.
+        </em> </div>
+    </div>
+    <div class="card">
+        <div class="image21"></div>
+        <div class="text"><em>A very pocket friendly and simple design yet beautifull and comfortable that will suit your pocket as well as be the right place for you and your guests.
+        </em> </div>
+    </div>
+    <footer>
+        <br><br> <br>
+        <span> Liked us here, You'll like it even more!. </span> <br>
+
+   <div>  Get in touch with us: <br> <br>
+
+        <br><p class="details1"><i class="fa fa-phone "></i>+91-9000900xxx</p> 
+        <p class="deatils1"><i class="fa fa-envelope"></i>futureoffurniture.30@gmail.com</p>
+        <p class="details1"><a href="https://www.instagram.com/futureoffurniture.official/" target="_blank" class="fa fa-instagram" style=" text-decoration:none; color: black;"><i>futureoffurniture.official</i></a></p> </div> <br><br>
+    </footer>
+
+</div>    
+</body>
+</html>
